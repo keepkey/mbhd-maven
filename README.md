@@ -4,6 +4,11 @@ A Maven staging repository for use with automated build tools.
 
 ## DO NOT RELY ON THESE SNAPSHOTS FOR PRODUCTION !
 
+These snapshots are not actively maintained beyond what Bitcoin Solutions developers need for their
+immediate purposes.
+
+Always use the final releases from the official repositories in your own code.
+
 ## Configuring projects to use Travis and Maven
 
 To allow Travis builds that use Maven artifacts that are not in Maven Central, provide the following
