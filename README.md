@@ -5,7 +5,7 @@ A Maven staging repository for use with automated build tools.
 ## DO NOT RELY ON THESE SNAPSHOTS FOR PRODUCTION !
 
 These snapshots are not actively maintained beyond what Bitcoin Solutions developers need for their
-immediate purposes.
+immediate purposes. There is no guarantee which branch they were lifted from.
 
 Always use the final releases from the official repositories in your own code.
 
