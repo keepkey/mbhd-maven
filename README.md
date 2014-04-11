@@ -9,6 +9,18 @@ immediate purposes. There is no guarantee which branch they were lifted from.
 
 Always use the final releases from the official repositories in your own code.
 
+## Use Ant to quickly update artifacts
+
+First create a `build.properties` file representing your own repo:
+
+    repo=/var/maven/repo
+
+Then run the default target for the `build.xml`, for example:
+
+    $ ant
+
+This will then copy all the relevant artifacts into this repo. Then do the usual git commit and push.
+
 ## Configuring projects to use Travis and Maven
 
 To allow Travis builds that use Maven artifacts that are not in Maven Central, provide the following

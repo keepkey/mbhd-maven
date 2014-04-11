@@ -21,6 +21,9 @@ nb*.xml
 # Maven
 target/
 
+# Ant
+build.properties
+
 # JWrapper
 mbhd-install/jwrapper-*.jar
 mbhd-install/JRE-1.7/

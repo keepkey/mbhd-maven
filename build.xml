@@ -1,0 +1,33 @@
+<project name="MBHD Maven" default="update" basedir=".">
+  <description>Updates from local Maven repository</description>
+
+
+  <!-- Create a build properties for your local system and set the following as necessary
+
+  repo=/var/maven/repo
+
+  -->
+  <property file="build.properties"/>
+
+  <target name="update" description="Read the existing Maven repo and update snapshots" >
+
+    <!-- MultiBit HD artifacts -->
+    <copy todir="snapshots/org/multibit/hd/mbhd-brit" overwrite="true">
+      <fileset dir="${repo}/org/multibit/hd/mbhd-brit"/>
+    </copy>
+    <copy todir="snapshots/org/multibit/hd/mbhd-core" overwrite="true">
+      <fileset dir="${repo}/org/multibit/hd/mbhd-core"/>
+    </copy>
+
+    <!-- Bitcoinj artifacts -->
+    <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true">
+      <fileset dir="${repo}/com/google/bitcoinj/0.12-SNAPSHOT">
+        <excludesfile>*bundled*.jar</excludesfile>
+      </fileset>
+    </copy>
+    <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true">
+      <fileset dir="${repo}/com/google/bitcoinj-parent/0.12-SNAPSHOT"/>
+    </copy>
+
+  </target>
+</project>
