@@ -18,11 +18,14 @@
     <copy todir="snapshots/org/multibit/hd/mbhd-core" overwrite="true">
       <fileset dir="${repo}/org/multibit/hd/mbhd-core"/>
     </copy>
+    <copy todir="snapshots/org/multibit/hd/mbhd-parent" overwrite="true">
+      <fileset dir="${repo}/org/multibit/hd/mbhd-parent"/>
+    </copy>
 
     <!-- Bitcoinj artifacts -->
     <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true">
       <fileset dir="${repo}/com/google/bitcoinj/0.12-SNAPSHOT">
-        <excludesfile>*bundled*.jar</excludesfile>
+        <exclude name="*bundled*.jar" />
       </fileset>
     </copy>
     <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true">
