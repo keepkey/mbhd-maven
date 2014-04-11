@@ -1,6 +1,10 @@
 ## MultiBit HD Maven
 
-A Maven staging repository for use with automated build tools
+A Maven staging repository for use with automated build tools.
+
+## DO NOT RELY ON THESE SNAPSHOTS FOR PRODUCTION !
+
+## Configuring projects to use Travis and Maven
 
 To allow Travis builds that use Maven artifacts that are not in Maven Central, provide the following
 entry into the parent POM:
