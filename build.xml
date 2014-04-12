@@ -11,7 +11,9 @@
 
   <target name="update" description="Read the existing Maven repo and update snapshots" >
 
-    <!-- MultiBit HD artifacts -->
+    <!-- MultiBit HD release artifacts -->
+
+    <!-- MultiBit HD snapshot artifacts -->
     <copy todir="snapshots/org/multibit/hd/mbhd-brit" overwrite="true">
       <fileset dir="${repo}/org/multibit/hd/mbhd-brit"/>
     </copy>
@@ -22,7 +24,17 @@
       <fileset dir="${repo}/org/multibit/hd/mbhd-parent"/>
     </copy>
 
-    <!-- Bitcoinj artifacts -->
+    <!-- Bitcoinj release artifacts -->
+    <copy todir="releases/com/google/bitcoinj/0.11.1-MB-ALICE" overwrite="true">
+      <fileset dir="${repo}/com/google/bitcoinj/0.11.1-MB-ALICE">
+        <exclude name="*bundled*.jar" />
+      </fileset>
+    </copy>
+    <copy todir="releases/com/google/bitcoinj-parent/0.11.1-MB-ALICE" overwrite="true">
+      <fileset dir="${repo}/com/google/bitcoinj-parent/0.11.1-MB-ALICE"/>
+    </copy>
+
+    <!-- Bitcoinj snapshot artifacts -->
     <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true">
       <fileset dir="${repo}/com/google/bitcoinj/0.12-SNAPSHOT">
         <exclude name="*bundled*.jar" />
