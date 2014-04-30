@@ -1,20 +1,13 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Thu Apr 24 09:28:37 BST 2014
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.error=
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.error=
-http\://repo1.maven.org/maven2/.lastUpdated=1398328113292
-http\://mvn-adamgent.googlecode.com/svn/maven/release/.lastUpdated=1398328115038
-https\://oss.sonatype.org/content/repositories/snapshots/.error=
-https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1398328113993
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1398328115250
-http\://mvn-adamgent.googlecode.com/svn/maven/release/.error=
-http\://repository.jboss.org/.lastUpdated=1398328114628
-https\://oss.sonatype.org/content/groups/public/.lastUpdated=1398328117506
+#Thu Apr 24 10:09:54 BST 2014
+https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1398330594603
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1398330591655
+http\://repository.jboss.org/.lastUpdated=1398330592021
 http\://distribution.bitcoinj.googlecode.com/git/releases/.error=
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1398328115985
-http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1398328114821
-https\://oss.sonatype.org/content/repositories/snapshots/.lastUpdated=1398328116759
-https\://oss.sonatype.org/content/groups/public/.error=
-http\://repository.jboss.org/.error=
 https\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://mvn-adamgent.googlecode.com/svn/maven/release/.lastUpdated=1398330592444
+http\://repository.jboss.org/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1398330591085
 http\://repo1.maven.org/maven2/.error=
+http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1398330592214
+http\://mvn-adamgent.googlecode.com/svn/maven/release/.error=
