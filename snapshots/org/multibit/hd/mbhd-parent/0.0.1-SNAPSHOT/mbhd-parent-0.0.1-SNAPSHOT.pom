@@ -23,7 +23,7 @@
 
     <!-- Library versions with multiple modules -->
     <slf4j.version>1.7.2</slf4j.version>
-    <xchange.version>1.7.0</xchange.version>
+    <xchange.version>2.0.0</xchange.version>
     <jackson.version>2.2.2</jackson.version>
 
     <!-- Maven plugins -->
@@ -244,7 +244,7 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <!-- Require v16.0.1+ for full JDK1.7.0_51+ compliance -->
-        <version>13.0.1</version>
+        <version>16.0.1</version>
       </dependency>
 
       <!-- Findbugs annotations -->
@@ -262,12 +262,11 @@
       </dependency>
 
       <!-- Crypto -->
-      <dependency>
-        <groupId>com.madgag</groupId>
-        <artifactId>sc-light-jdk15on</artifactId>
-        <version>1.47.0.2</version>
-      </dependency>
-
+        <dependency>
+            <groupId>com.madgag.spongycastle</groupId>
+            <artifactId>core</artifactId>
+            <version>1.50.0.0</version>
+        </dependency>
 
       <!-- Joda time for timestamps -->
       <dependency>
