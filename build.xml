@@ -43,6 +43,12 @@
     <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true">
       <fileset dir="${repo}/com/google/bitcoinj-parent/0.12-SNAPSHOT"/>
     </copy>
+    <!-- Orchid is within Bitcoinj -->
+    <copy todir="snapshots/com/subgraph/orchid/1.0-SNAPSHOT" overwrite="true">
+      <fileset dir="${repo}/com/subgraph/orchid/1.0-SNAPSHOT">
+        <exclude name="*bundled*.jar" />
+      </fileset>
+    </copy>
 
   </target>
 </project>
