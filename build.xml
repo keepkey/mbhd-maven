@@ -25,14 +25,14 @@
     </copy>
 
     <!-- Bitcoinj release artifacts -->
-    <copy todir="releases/com/google/bitcoinj/0.11.2-MB-ALICE" overwrite="true">
-      <fileset dir="${repo}/com/google/bitcoinj/0.11.2-MB-ALICE">
-        <exclude name="*bundled*.jar" />
-      </fileset>
-    </copy>
-    <copy todir="releases/com/google/bitcoinj-parent/0.11.2-MB-ALICE" overwrite="true">
-      <fileset dir="${repo}/com/google/bitcoinj-parent/0.11.2-MB-ALICE"/>
-    </copy>
+    <!--<copy todir="releases/com/google/bitcoinj/0.11.2-MB-ALICE" overwrite="true">-->
+      <!--<fileset dir="${repo}/com/google/bitcoinj/0.11.2-MB-ALICE">-->
+        <!--<exclude name="*bundled*.jar" />-->
+      <!--</fileset>-->
+    <!--</copy>-->
+    <!--<copy todir="releases/com/google/bitcoinj-parent/0.11.2-MB-ALICE" overwrite="true">-->
+      <!--<fileset dir="${repo}/com/google/bitcoinj-parent/0.11.2-MB-ALICE"/>-->
+    <!--</copy>-->
 
     <!-- Bitcoinj snapshot artifacts -->
     <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true">

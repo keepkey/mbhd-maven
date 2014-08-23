@@ -1,6 +1,13 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Jul 28 20:33:35 BST 2014
-bitcoinj-0.12-SNAPSHOT-sources.jar>=
+#Sat Aug 23 11:23:39 BST 2014
+bitcoinj-0.12-SNAPSHOT.jar>mbhd-maven-blob=
+bitcoinj-0.12-SNAPSHOT-bundled.jar>=
+bitcoinj-0.12-SNAPSHOT.pom>mbhd-maven-blob=
 bitcoinj-0.12-SNAPSHOT.jar>=
 bitcoinj-0.12-SNAPSHOT.pom>=
-bitcoinj-0.12-SNAPSHOT-bundled.jar>=
+bitcoinj-0.12-SNAPSHOT.pom>mbhd-maven-raw=
+bitcoinj-0.12-SNAPSHOT.pom>mbhd-maven=
+bitcoinj-0.12-SNAPSHOT.jar>mbhd-maven=
+bitcoinj-0.12-SNAPSHOT.jar>mbhd-maven-raw=
+bitcoinj-0.12-SNAPSHOT-tests.jar>=
+bitcoinj-0.12-SNAPSHOT-sources.jar>=
