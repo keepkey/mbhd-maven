@@ -1,6 +1,12 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Wed Feb 05 19:24:27 GMT 2014
-http\://mvn-adamgent.googlecode.com/svn/maven/release/.lastUpdated=1391628267758
-http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1391628267358
+#Tue Feb 11 17:41:47 GMT 2014
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1392140506611
+http\://repository.jboss.org/.lastUpdated=1392140507025
 http\://distribution.bitcoinj.googlecode.com/git/releases/.error=
+http\://mvn-adamgent.googlecode.com/svn/maven/release/.lastUpdated=1392140507563
+https\://repository.jboss.org/nexus/content/repositories/releases/.error=
+http\://repository.jboss.org/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1392140505889
+http\://repo1.maven.org/maven2/.error=
+http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1392140507287
 http\://mvn-adamgent.googlecode.com/svn/maven/release/.error=
