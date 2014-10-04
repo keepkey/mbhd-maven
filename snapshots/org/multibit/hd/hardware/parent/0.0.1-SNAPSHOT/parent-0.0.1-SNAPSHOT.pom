@@ -56,16 +56,22 @@
 
   <repositories>
     <!-- Define the MultiBit staging repository for snapshots
-         GitHub requires mixture of raw and blob for POM and JAR -->
+         GitHub requires mixture of raw text and blob for POMs and JARs -->
     <repository>
-      <id>mbhd-maven-raw</id>
+      <id>mbhd-maven-raw-text</id>
       <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots</url>
-      <snapshots/>
+      <!-- These artifacts change frequently during development iterations -->
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
     </repository>
     <repository>
-      <id>mbhd-maven-blob</id>
-      <url>https://github.com/bitcoin-solutions/mbhd-maven/blob/master/snapshots</url>
-      <snapshots/>
+      <id>mbhd-maven-raw-blob</id>
+      <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots</url>
+      <!-- These artifacts change frequently during development iterations -->
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
     </repository>
     <!-- Bitcoinj releases -->
     <repository>
@@ -74,6 +80,7 @@
       <url>http://distribution.bitcoinj.googlecode.com/git/releases</url>
       <releases/>
     </repository>
+
   </repositories>
 
   <distributionManagement>
@@ -100,7 +107,6 @@
   <modules>
     <module>core</module>
     <module>trezor</module>
-    <module>examples</module>
     <module>emulators</module>
   </modules>
 
@@ -191,7 +197,8 @@
     </plugins>
   </build>
 
-  <!-- Provide defaults for all modules to use -->
+  <!-- Parent provides default configuration for dependencies
+       (see examples project to how to arrange this in downstream applications -->
   <dependencyManagement>
     <dependencies>
 
@@ -200,27 +207,6 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${slf4j.version}</version>
-        <scope>provided</scope>
-      </dependency>
-
-      <!-- mbhd-hardware consumers are expected to provide their own SLF4J adapters
-           such as logback, slf4j-log4j12, slf4j-jcl and so on
-           The SLF4J Simple is just for console logging for the tests
-           See http://www.slf4j.org/faq.html -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>${slf4j.version}</version>
-        <scope>test</scope>
-        <optional>true</optional>
-      </dependency>
-
-      <!-- Google Guava for code utilities -->
-      <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>14.0.1</version>
-        <scope>provided</scope>
       </dependency>
 
       <!-- Java HID API for USB -->
@@ -235,21 +221,6 @@
         <groupId>com.google</groupId>
         <artifactId>bitcoinj</artifactId>
         <version>0.12-SNAPSHOT</version>
-        <scope>provided</scope>
-        <exclusions>
-          <exclusion>
-            <groupId>com.google.protobuf</groupId>
-            <artifactId>protobuf-java</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-
-      <!-- Protocol buffers for serialisation -->
-      <dependency>
-        <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java</artifactId>
-        <version>2.5.0</version>
-        <scope>provided</scope>
       </dependency>
 
       <!-- Testing -->
@@ -290,16 +261,17 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
 
-    <!-- Google Guava for code utilities -->
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-    </dependency>
-
-    <!-- Java HID API for USB -->
+    <!-- Java HID API for UART-USB on Raspberry Pi -->
     <dependency>
       <groupId>com.codeminders</groupId>
       <artifactId>hidapi</artifactId>
+    </dependency>
+
+    <!-- USB 4 Java for HID USB on Windows and Linux (no OSX) -->
+    <dependency>
+      <groupId>org.usb4java</groupId>
+      <artifactId>usb4java-javax</artifactId>
+      <version>1.2.0</version>
     </dependency>
 
     <!-- Bitcoinj for Bitcoin operations -->
@@ -308,18 +280,13 @@
       <artifactId>bitcoinj</artifactId>
     </dependency>
 
-    <!-- Protocol buffers for serialisation -->
-    <dependency>
-      <groupId>com.google.protobuf</groupId>
-      <artifactId>protobuf-java</artifactId>
-    </dependency>
-
     <!-- Testing -->
 
     <!-- SLF4J simple for logging test output -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
       <scope>test</scope>
     </dependency>
 

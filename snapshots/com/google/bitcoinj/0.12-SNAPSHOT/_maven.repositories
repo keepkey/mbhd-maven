@@ -1,6 +1,6 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Sun Jul 27 14:24:48 BST 2014
-bitcoinj-0.12-SNAPSHOT-sources.jar>=
-bitcoinj-0.12-SNAPSHOT.jar>=
-bitcoinj-0.12-SNAPSHOT.pom>=
-bitcoinj-0.12-SNAPSHOT-bundled.jar>=
+#Thu Oct 02 11:56:33 BST 2014
+bitcoinj-0.12-SNAPSHOT.pom>mbhd-maven-raw-text=
+bitcoinj-0.12-SNAPSHOT.jar>mbhd-maven-raw=
+bitcoinj-0.12-SNAPSHOT.pom>mbhd-maven-raw=
+bitcoinj-0.12-SNAPSHOT.jar>mbhd-maven-raw-text=

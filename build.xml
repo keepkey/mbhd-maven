@@ -14,30 +14,30 @@
     <!-- MultiBit HD release artifacts -->
 
     <!-- MultiBit HD snapshot artifacts -->
-    <copy todir="snapshots/org/multibit/hd/mbhd-brit" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/mbhd-brit" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/mbhd-brit"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/mbhd-core" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/mbhd-core" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/mbhd-core"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/mbhd-parent" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/mbhd-parent" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/mbhd-parent"/>
     </copy>
 
     <!-- MultiBit Hardware snapshot artifacts -->
-    <copy todir="snapshots/org/multibit/hd/hardware/parent" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/hardware/parent" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/parent"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/hardware/core" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/hardware/core" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/core"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/hardware/trezor" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/hardware/trezor" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/trezor"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/hardware/examples" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/hardware/examples" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/examples"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true">
+    <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/emulators"/>
     </copy>
 
@@ -53,16 +53,16 @@
     <!--</copy>-->
 
     <!-- Bitcoinj snapshot artifacts -->
-    <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true">
+    <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true" failonerror="false">
       <fileset dir="${repo}/com/google/bitcoinj/0.12-SNAPSHOT">
         <exclude name="*bundled*.jar" />
       </fileset>
     </copy>
-    <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true">
+    <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true" failonerror="false">
       <fileset dir="${repo}/com/google/bitcoinj-parent/0.12-SNAPSHOT"/>
     </copy>
     <!-- Orchid is within Bitcoinj -->
-    <copy todir="snapshots/com/subgraph/orchid/1.0-SNAPSHOT" overwrite="true">
+    <copy todir="snapshots/com/subgraph/orchid/1.0-SNAPSHOT" overwrite="true" failonerror="false">
       <fileset dir="${repo}/com/subgraph/orchid/1.0-SNAPSHOT">
         <exclude name="*bundled*.jar" />
       </fileset>

@@ -1,6 +1,6 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Mon Jul 28 13:38:43 BST 2014
-orchid-1.0-SNAPSHOT-bundled.jar>=
-orchid-1.0-SNAPSHOT-sources.jar>=
-orchid-1.0-SNAPSHOT.jar>=
-orchid-1.0-SNAPSHOT.pom>=
+#Thu Oct 02 11:56:32 BST 2014
+orchid-1.0-SNAPSHOT.jar>mbhd-maven-raw=
+orchid-1.0-SNAPSHOT.pom>mbhd-maven-raw=
+orchid-1.0-SNAPSHOT.jar>mbhd-maven-raw-text=
+orchid-1.0-SNAPSHOT.pom>mbhd-maven-raw-text=
