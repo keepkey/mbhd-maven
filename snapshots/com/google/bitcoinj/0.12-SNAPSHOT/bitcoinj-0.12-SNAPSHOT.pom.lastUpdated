@@ -1,9 +1,10 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Sun Sep 21 17:42:12 BST 2014
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1411317732794
+#Sat Oct 04 21:43:26 BST 2014
 http\://repo1.maven.org/maven2/.error=
+https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1412455405193
+http\://repository.jboss.org/.lastUpdated=1412455404646
 https\://repository.jboss.org/nexus/content/repositories/releases/.error=
-http\://repository.jboss.org/.lastUpdated=1411317732110
-https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1411317731204
-http\://repo1.maven.org/maven2/.lastUpdated=1411317730660
+http\://repo1.maven.org/maven2/.lastUpdated=1412455403374
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1412455403910
 http\://repository.jboss.org/.error=
+https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots/.lastUpdated=1412455406263

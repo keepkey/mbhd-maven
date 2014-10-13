@@ -88,16 +88,10 @@
       <url>http://mvn-adamgent.googlecode.com/svn/maven/release</url>
       <releases/>
     </repository>
-    <!-- Define the MultiBit staging repository for snapshots
-         GitHub requires mixture of raw and blob for POM and JAR -->
+    <!-- Define the MultiBit staging repository for snapshots -->
     <repository>
-      <id>mbhd-maven-raw</id>
+      <id>mbhd-maven</id>
       <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots</url>
-      <snapshots/>
-    </repository>
-    <repository>
-      <id>mbhd-maven-blob</id>
-      <url>https://github.com/bitcoin-solutions/mbhd-maven/blob/master/snapshots</url>
       <snapshots/>
     </repository>
 

@@ -11,8 +11,6 @@
 
   <target name="update" description="Read the existing Maven repo and update snapshots" >
 
-    <!-- MultiBit HD release artifacts -->
-
     <!-- MultiBit HD snapshot artifacts -->
     <copy todir="snapshots/org/multibit/hd/mbhd-brit" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/mbhd-brit"/>
@@ -41,16 +39,10 @@
       <fileset dir="${repo}/org/multibit/hd/hardware/emulators"/>
     </copy>
 
-
-    <!-- Bitcoinj release artifacts -->
-    <!--<copy todir="releases/com/google/bitcoinj/0.11.2-MB-ALICE" overwrite="true">-->
-      <!--<fileset dir="${repo}/com/google/bitcoinj/0.11.2-MB-ALICE">-->
-        <!--<exclude name="*bundled*.jar" />-->
-      <!--</fileset>-->
-    <!--</copy>-->
-    <!--<copy todir="releases/com/google/bitcoinj-parent/0.11.2-MB-ALICE" overwrite="true">-->
-      <!--<fileset dir="${repo}/com/google/bitcoinj-parent/0.11.2-MB-ALICE"/>-->
-    <!--</copy>-->
+    <!-- hid4java snapshot artifacts -->
+    <copy todir="snapshots/org/hid4java" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/hid4java"/>
+    </copy>
 
     <!-- Bitcoinj snapshot artifacts -->
     <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true" failonerror="false">
@@ -67,6 +59,18 @@
         <exclude name="*bundled*.jar" />
       </fileset>
     </copy>
+
+    <!-- Forked Bitcoinj release artifacts -->
+    <!--<copy todir="releases/com/google/bitcoinj/0.11.2-MB-ALICE" overwrite="true">-->
+    <!--<fileset dir="${repo}/com/google/bitcoinj/0.11.2-MB-ALICE">-->
+    <!--<exclude name="*bundled*.jar" />-->
+    <!--</fileset>-->
+    <!--</copy>-->
+    <!--<copy todir="releases/com/google/bitcoinj-parent/0.11.2-MB-ALICE" overwrite="true">-->
+    <!--<fileset dir="${repo}/com/google/bitcoinj-parent/0.11.2-MB-ALICE"/>-->
+    <!--</copy>-->
+
+
 
   </target>
 </project>
