@@ -48,33 +48,22 @@
       <fileset dir="${repo}/org/hid4java/hid4java/0.2.0-SNAPSHOT"/>
     </copy>
 
-    <!-- Bitcoinj snapshot artifacts -->
-    <copy todir="snapshots/com/google/bitcoinj/0.12-SNAPSHOT" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/com/google/bitcoinj/0.12-SNAPSHOT">
-        <exclude name="*bundled*.jar" />
-      </fileset>
-    </copy>
-    <copy todir="snapshots/com/google/bitcoinj-parent/0.12-SNAPSHOT" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/com/google/bitcoinj-parent/0.12-SNAPSHOT"/>
-    </copy>
-    <!-- Orchid is within Bitcoinj -->
-    <copy todir="snapshots/com/subgraph/orchid/1.0-SNAPSHOT" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/com/subgraph/orchid/1.0-SNAPSHOT">
-        <exclude name="*bundled*.jar" />
-      </fileset>
-    </copy>
-
     <!-- Forked Bitcoinj release artifacts -->
-    <!--<copy todir="releases/com/google/bitcoinj/0.11.2-MB-ALICE" overwrite="true">-->
-    <!--<fileset dir="${repo}/com/google/bitcoinj/0.11.2-MB-ALICE">-->
-    <!--<exclude name="*bundled*.jar" />-->
-    <!--</fileset>-->
-    <!--</copy>-->
-    <!--<copy todir="releases/com/google/bitcoinj-parent/0.11.2-MB-ALICE" overwrite="true">-->
-    <!--<fileset dir="${repo}/com/google/bitcoinj-parent/0.11.2-MB-ALICE"/>-->
-    <!--</copy>-->
+    <copy todir="releases/org/bitcoinj/bitcoinj-core/0.12-alice" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-core/0.12-alice">
+    <exclude name="*bundled*.jar" />
+    </fileset>
+    </copy>
+    <copy todir="releases/org/bitcoinj/bitcoinj-parent/0.12-alice" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-parent/0.12-alice"/>
+    </copy>
 
-
+    <!-- Orchid is released through Bitcoinj -->
+    <copy todir="releases/org/bitcoinj/orchid/1.0" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/bitcoinj/orchid/1.0">
+        <exclude name="*bundled*.jar" />
+      </fileset>
+    </copy>
 
   </target>
 </project>
