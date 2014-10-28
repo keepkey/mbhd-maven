@@ -7,23 +7,23 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-    <lastUpdated>20141015133259</lastUpdated>
+    <lastUpdated>20141028154520</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
         <value>develop-SNAPSHOT</value>
-        <updated>20141015133259</updated>
+        <updated>20141028154520</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
         <value>develop-SNAPSHOT</value>
-        <updated>20141015133259</updated>
+        <updated>20141028154520</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>develop-SNAPSHOT</value>
-        <updated>20141015133259</updated>
+        <updated>20141028154520</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
