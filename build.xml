@@ -34,9 +34,6 @@
     <copy todir="snapshots/org/multibit/hd/hardware/trezor" overwrite="true">
       <fileset dir="${repo}/org/multibit/hd/hardware/trezor"/>
     </copy>
-    <copy todir="snapshots/org/multibit/hd/hardware/examples" overwrite="true">
-      <fileset dir="${repo}/org/multibit/hd/hardware/examples"/>
-    </copy>
     <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true">
       <fileset dir="${repo}/org/multibit/hd/hardware/emulators"/>
     </copy>

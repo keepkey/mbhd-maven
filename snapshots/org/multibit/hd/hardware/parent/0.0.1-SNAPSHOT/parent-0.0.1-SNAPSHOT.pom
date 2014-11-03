@@ -10,7 +10,8 @@
   <packaging>pom</packaging>
 
   <name>MultiBit HD Hardware</name>
-  <description>MBHD Hardware provides a common API for hardware wallets that wish to interface with MultiBit HD</description>
+  <description>MBHD Hardware provides a common API for hardware wallets that wish to interface with MultiBit HD
+  </description>
 
   <properties>
     <!-- Source encoding -->
@@ -54,12 +55,43 @@
   </issueManagement>
 
   <repositories>
+    <!-- Define the MultiBit staging repository for snapshots
+         GitHub requires mixture of raw text and blob for POMs and JARs -->
+    <repository>
+      <id>mbhd-maven-release-raw-text</id>
+      <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases</url>
+      <releases/>
+    </repository>
+    <repository>
+      <id>mbhd-maven-release-raw-blob</id>
+      <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases</url>
+      <releases/>
+    </repository>
+    <repository>
+      <id>mbhd-maven-snapshot-raw-text</id>
+      <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots</url>
+      <!-- These artifacts change frequently during development iterations -->
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>mbhd-maven-snapshot-raw-blob</id>
+      <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots</url>
+      <!-- These artifacts change frequently during development iterations -->
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+
+    <!-- Bitcoinj releases -->
     <repository>
       <id>bitcoinj-releases</id>
       <name>Bitcoinj Releases</name>
       <url>http://distribution.bitcoinj.googlecode.com/git/releases</url>
-      <releases />
+      <releases/>
     </repository>
+
   </repositories>
 
   <distributionManagement>
@@ -86,7 +118,6 @@
   <modules>
     <module>core</module>
     <module>trezor</module>
-    <module>examples</module>
     <module>emulators</module>
   </modules>
 
@@ -177,7 +208,8 @@
     </plugins>
   </build>
 
-  <!-- Provide defaults for all modules to use -->
+  <!-- Parent provides default configuration for dependencies
+       (see examples project to how to arrange this in downstream applications -->
   <dependencyManagement>
     <dependencies>
 
@@ -186,25 +218,6 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${slf4j.version}</version>
-      </dependency>
-
-      <!-- mbhd-hardware consumers are expected to provide their own SLF4J adapters
-           such as logback, slf4j-log4j12, slf4j-jcl and so on
-           The SLF4J Simple is just for console logging for the tests
-           See http://www.slf4j.org/faq.html -->
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>${slf4j.version}</version>
-        <scope>test</scope>
-        <optional>true</optional>
-      </dependency>
-
-      <!-- Google Guava for code utilities -->
-      <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>14.0.1</version>
       </dependency>
 
       <!-- Java HID API for USB -->
@@ -218,7 +231,7 @@
       <dependency>
         <groupId>com.google</groupId>
         <artifactId>bitcoinj</artifactId>
-        <version>0.10</version>
+        <version>0.12-SNAPSHOT</version>
       </dependency>
 
       <!-- Testing -->
@@ -244,6 +257,7 @@
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>1.8.5</version>
+        <scope>test</scope>
       </dependency>
 
     </dependencies>
@@ -258,22 +272,17 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
 
-    <!-- Google Guava for code utilities -->
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-    </dependency>
-
-    <!-- Java HID API for USB -->
-    <dependency>
-      <groupId>com.codeminders</groupId>
-      <artifactId>hidapi</artifactId>
-    </dependency>
-
     <!-- Bitcoinj for Bitcoin operations -->
     <dependency>
       <groupId>com.google</groupId>
       <artifactId>bitcoinj</artifactId>
+    </dependency>
+
+    <!-- Apache Commons for utilities not in Guava -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.1</version>
     </dependency>
 
     <!-- Testing -->
@@ -282,6 +291,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
       <scope>test</scope>
     </dependency>
 
