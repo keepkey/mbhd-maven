@@ -220,6 +220,7 @@
         <version>${slf4j.version}</version>
       </dependency>
 
+<<<<<<< HEAD
       <!-- Java HID API for USB -->
       <dependency>
         <groupId>com.codeminders</groupId>
@@ -232,6 +233,20 @@
         <groupId>com.google</groupId>
         <artifactId>bitcoinj</artifactId>
         <version>0.12-SNAPSHOT</version>
+=======
+      <!-- hid4java for HID USB -->
+      <dependency>
+        <groupId>org.hid4java</groupId>
+        <artifactId>hid4java</artifactId>
+        <version>0.1.0</version>
+      </dependency>
+
+      <!-- Bitcoinj for Bitcoin operations (alice is custom fork with BIP44) -->
+      <dependency>
+        <groupId>org.bitcoinj</groupId>
+        <artifactId>bitcoinj-core</artifactId>
+        <version>0.12-alice</version>
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
       </dependency>
 
       <!-- Testing -->
@@ -273,9 +288,19 @@
     </dependency>
 
     <!-- Bitcoinj for Bitcoin operations -->
+<<<<<<< HEAD
+=======
     <dependency>
-      <groupId>com.google</groupId>
-      <artifactId>bitcoinj</artifactId>
+      <groupId>org.bitcoinj</groupId>
+      <artifactId>bitcoinj-core</artifactId>
+    </dependency>
+
+    <!-- Apache Commons for utilities not in Guava -->
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.1</version>
     </dependency>
 
     <!-- Apache Commons for utilities not in Guava -->

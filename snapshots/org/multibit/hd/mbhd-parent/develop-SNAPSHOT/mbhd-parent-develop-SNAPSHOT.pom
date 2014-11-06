@@ -69,6 +69,7 @@
 
   <repositories>
     <!-- Define the MultiBit staging repository for snapshots
+<<<<<<< HEAD
      GitHub requires mixture of raw text and blob for POMs and JARs -->
     <repository>
       <id>mbhd-maven-release-raw-text</id>
@@ -82,6 +83,11 @@
     </repository>
     <repository>
       <id>mbhd-maven-snapshot-raw-text</id>
+=======
+         GitHub requires mixture of raw text and blob for POMs and JARs -->
+    <repository>
+      <id>mbhd-maven-raw-text</id>
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
       <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots</url>
       <!-- These artifacts change frequently during development iterations -->
       <snapshots>
@@ -89,7 +95,11 @@
       </snapshots>
     </repository>
     <repository>
+<<<<<<< HEAD
       <id>mbhd-maven-snapshot-raw-blob</id>
+=======
+      <id>mbhd-maven-raw-blob</id>
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
       <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots</url>
       <!-- These artifacts change frequently during development iterations -->
       <snapshots>
@@ -250,7 +260,11 @@
       <dependency>
         <groupId>org.multibit.hd.hardware</groupId>
         <artifactId>trezor</artifactId>
+<<<<<<< HEAD
         <version>develop-SNAPSHOT</version>
+=======
+        <version>0.0.1-SNAPSHOT</version>
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
       </dependency>
 
       <!-- Logging is through SLF4J and Logback -->

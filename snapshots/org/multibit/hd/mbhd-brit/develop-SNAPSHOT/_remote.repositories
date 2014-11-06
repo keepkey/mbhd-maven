@@ -1,5 +1,9 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+<<<<<<< HEAD
 #Thu Nov 06 09:47:39 GMT 2014
+=======
+#Sat Oct 04 21:52:20 BST 2014
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
 mbhd-brit-develop-SNAPSHOT.jar>=
 mbhd-brit-develop-SNAPSHOT.pom>=
 mbhd-brit-develop-SNAPSHOT-sources.jar>=

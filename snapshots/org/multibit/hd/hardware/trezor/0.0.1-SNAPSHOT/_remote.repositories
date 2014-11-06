@@ -1,5 +1,9 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+<<<<<<< HEAD
 #Mon Oct 13 15:50:46 BST 2014
+=======
+#Mon Oct 13 14:23:25 BST 2014
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
 trezor-0.0.1-SNAPSHOT.pom>=
 trezor-0.0.1-SNAPSHOT-sources.jar>=
 trezor-0.0.1-SNAPSHOT.jar>=

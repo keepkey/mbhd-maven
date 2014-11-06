@@ -1,14 +1,16 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Wed Jul 02 20:00:50 BST 2014
-https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1404327648655
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1404327650194
-http\://repository.jboss.org/.lastUpdated=1404327649035
+#Mon Oct 13 10:49:00 BST 2014
+https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.error=
+https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases/.lastUpdated=1413193739927
+https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots/.lastUpdated=1413193740480
+https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1413193739543
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1413193738497
+https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1413193740077
+http\://repository.jboss.org/.lastUpdated=1413193739347
 http\://distribution.bitcoinj.googlecode.com/git/releases/.error=
+https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases/.error=
 https\://repository.jboss.org/nexus/content/repositories/releases/.error=
-http\://mvn-adamgent.googlecode.com/svn/maven/release/.lastUpdated=1404327649555
 http\://repository.jboss.org/.error=
-https\://github.com/bitcoin-solutions/mbhd-maven/blob/master/snapshots/.lastUpdated=1404327650639
+http\://repo1.maven.org/maven2/.lastUpdated=1413193737462
 http\://repo1.maven.org/maven2/.error=
-http\://repo1.maven.org/maven2/.lastUpdated=1404327648092
-http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1404327649288
-http\://mvn-adamgent.googlecode.com/svn/maven/release/.error=
+http\://distribution.bitcoinj.googlecode.com/git/releases/.lastUpdated=1413193740712

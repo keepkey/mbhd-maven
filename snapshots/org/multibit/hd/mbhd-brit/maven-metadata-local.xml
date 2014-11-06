@@ -4,8 +4,15 @@
   <artifactId>mbhd-brit</artifactId>
   <versioning>
     <versions>
+<<<<<<< HEAD
       <version>develop-SNAPSHOT</version>
     </versions>
     <lastUpdated>20141106094739</lastUpdated>
+=======
+      <version>0.0.1-SNAPSHOT</version>
+      <version>develop-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20141004205220</lastUpdated>
+>>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
   </versioning>
 </metadata>
