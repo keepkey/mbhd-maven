@@ -7,10 +7,6 @@
       <version>0.0.1-SNAPSHOT</version>
       <version>develop-SNAPSHOT</version>
     </versions>
-<<<<<<< HEAD
-    <lastUpdated>20141106094602</lastUpdated>
-=======
-    <lastUpdated>20141028154514</lastUpdated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+    <lastUpdated>20141106153919</lastUpdated>
   </versioning>
 </metadata>

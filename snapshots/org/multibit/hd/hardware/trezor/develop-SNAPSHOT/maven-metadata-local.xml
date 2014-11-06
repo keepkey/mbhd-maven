@@ -7,39 +7,23 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-<<<<<<< HEAD
-    <lastUpdated>20141106094650</lastUpdated>
-=======
-    <lastUpdated>20141028154529</lastUpdated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+    <lastUpdated>20141106153939</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
         <value>develop-SNAPSHOT</value>
-<<<<<<< HEAD
-        <updated>20141106094650</updated>
-=======
-        <updated>20141028154529</updated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+        <updated>20141106153939</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
         <value>develop-SNAPSHOT</value>
-<<<<<<< HEAD
-        <updated>20141106094649</updated>
-=======
-        <updated>20141028154529</updated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+        <updated>20141106153939</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>develop-SNAPSHOT</value>
-<<<<<<< HEAD
-        <updated>20141106094649</updated>
-=======
-        <updated>20141028154529</updated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+        <updated>20141106153939</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

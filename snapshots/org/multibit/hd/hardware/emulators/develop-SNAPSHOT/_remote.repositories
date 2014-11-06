@@ -1,9 +1,5 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-<<<<<<< HEAD
-#Thu Nov 06 09:46:56 GMT 2014
-=======
-#Tue Oct 28 15:45:30 GMT 2014
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+#Thu Nov 06 15:39:40 GMT 2014
 emulators-develop-SNAPSHOT.jar>=
 emulators-develop-SNAPSHOT.pom>=
 emulators-develop-SNAPSHOT-sources.jar>=

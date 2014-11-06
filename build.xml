@@ -32,14 +32,8 @@
     <copy todir="snapshots/org/multibit/hd/hardware/trezor" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/trezor"/>
     </copy>
-<<<<<<< HEAD
-    <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true">
-=======
-    <copy todir="snapshots/org/multibit/hd/hardware/examples" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/multibit/hd/hardware/examples"/>
-    </copy>
+    <!-- Examples are not required as a dependency and are ignored -->
     <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true" failonerror="false">
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
       <fileset dir="${repo}/org/multibit/hd/hardware/emulators"/>
     </copy>
 
