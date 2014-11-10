@@ -1,9 +1,5 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Thu Nov 06 15:39:39 GMT 2014
+#Mon Nov 10 21:46:45 GMT 2014
 trezor-develop-SNAPSHOT.pom>=
 trezor-develop-SNAPSHOT-sources.jar>=
-trezor-develop-SNAPSHOT.jar>mbhd-maven-snapshot-raw-text=
-trezor-develop-SNAPSHOT.pom>mbhd-maven-snapshot-raw-text=
-trezor-develop-SNAPSHOT.jar>mbhd-maven-snapshot-raw-blob=
 trezor-develop-SNAPSHOT.jar>=
-trezor-develop-SNAPSHOT.pom>mbhd-maven-snapshot-raw-blob=
