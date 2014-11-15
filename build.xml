@@ -47,13 +47,13 @@
     </copy>
 
     <!-- Forked Bitcoinj release artifacts -->
-    <copy todir="releases/org/bitcoinj/bitcoinj-core/0.12-alice" overwrite="true">
-    <fileset dir="${repo}/org/bitcoinj/bitcoinj-core/0.12-alice">
+    <copy todir="snapshots/org/bitcoinj/bitcoinj-core/0.13-alice-SNAPSHOT" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-core/0.13-alice-SNAPSHOT">
     <exclude name="*bundled*.jar" />
     </fileset>
     </copy>
-    <copy todir="releases/org/bitcoinj/bitcoinj-parent/0.12-alice" overwrite="true">
-    <fileset dir="${repo}/org/bitcoinj/bitcoinj-parent/0.12-alice"/>
+    <copy todir="snapshots/org/bitcoinj/bitcoinj-parent/0.13-alice-SNAPSHOT" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-parent/0.13-alice-SNAPSHOT"/>
     </copy>
 
     <!-- Orchid is released through Bitcoinj -->
