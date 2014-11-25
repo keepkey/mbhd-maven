@@ -58,7 +58,17 @@
     <!-- Define the MultiBit staging repository for snapshots
          GitHub requires mixture of raw text and blob for POMs and JARs -->
     <repository>
-      <id>mbhd-maven-raw-text</id>
+      <id>mbhd-maven-release-raw-text</id>
+      <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases</url>
+      <releases/>
+    </repository>
+    <repository>
+      <id>mbhd-maven-release-raw-blob</id>
+      <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases</url>
+      <releases/>
+    </repository>
+    <repository>
+      <id>mbhd-maven-snapshot-raw-text</id>
       <url>https://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots</url>
       <!-- These artifacts change frequently during development iterations -->
       <snapshots>
@@ -66,13 +76,14 @@
       </snapshots>
     </repository>
     <repository>
-      <id>mbhd-maven-raw-blob</id>
+      <id>mbhd-maven-snapshot-raw-blob</id>
       <url>https://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots</url>
       <!-- These artifacts change frequently during development iterations -->
       <snapshots>
         <updatePolicy>always</updatePolicy>
       </snapshots>
     </repository>
+
     <!-- Bitcoinj releases -->
     <repository>
       <id>bitcoinj-releases</id>
@@ -261,23 +272,17 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
 
-    <!-- Java HID API for UART-USB on Raspberry Pi -->
-    <dependency>
-      <groupId>com.codeminders</groupId>
-      <artifactId>hidapi</artifactId>
-    </dependency>
-
-    <!-- USB 4 Java for HID USB on Windows and Linux (no OSX) -->
-    <dependency>
-      <groupId>org.usb4java</groupId>
-      <artifactId>usb4java-javax</artifactId>
-      <version>1.2.0</version>
-    </dependency>
-
     <!-- Bitcoinj for Bitcoin operations -->
     <dependency>
       <groupId>com.google</groupId>
       <artifactId>bitcoinj</artifactId>
+    </dependency>
+
+    <!-- Apache Commons for utilities not in Guava -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.1</version>
     </dependency>
 
     <!-- Testing -->

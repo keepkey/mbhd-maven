@@ -4,8 +4,9 @@
   <artifactId>emulators</artifactId>
   <versioning>
     <versions>
+      <version>0.0.1-SNAPSHOT</version>
       <version>develop-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20141115220520</lastUpdated>
+    <lastUpdated>20141125160843</lastUpdated>
   </versioning>
 </metadata>

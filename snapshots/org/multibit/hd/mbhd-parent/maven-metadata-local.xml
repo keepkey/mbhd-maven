@@ -3,16 +3,11 @@
   <groupId>org.multibit.hd</groupId>
   <artifactId>mbhd-parent</artifactId>
   <versioning>
+    <release>0.0.4</release>
     <versions>
-<<<<<<< HEAD
       <version>develop-SNAPSHOT</version>
+      <version>0.0.4</version>
     </versions>
-    <lastUpdated>20141106094633</lastUpdated>
-=======
-      <version>0.0.1-SNAPSHOT</version>
-      <version>develop-SNAPSHOT</version>
-    </versions>
-    <lastUpdated>20141004205158</lastUpdated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+    <lastUpdated>20141125162715</lastUpdated>
   </versioning>
 </metadata>

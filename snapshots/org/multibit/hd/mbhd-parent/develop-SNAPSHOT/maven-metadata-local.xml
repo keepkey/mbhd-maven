@@ -7,20 +7,12 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-<<<<<<< HEAD
-    <lastUpdated>20141106094633</lastUpdated>
-=======
-    <lastUpdated>20141004205158</lastUpdated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+    <lastUpdated>20141125162715</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
         <value>develop-SNAPSHOT</value>
-<<<<<<< HEAD
-        <updated>20141106094633</updated>
-=======
-        <updated>20141004205158</updated>
->>>>>>> 5563464fc8ac003fe9cf214804ae3af46ea5c82d
+        <updated>20141125162715</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
