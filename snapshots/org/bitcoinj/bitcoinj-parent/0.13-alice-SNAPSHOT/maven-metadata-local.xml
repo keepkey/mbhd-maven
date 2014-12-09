@@ -7,12 +7,12 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-    <lastUpdated>20141203212006</lastUpdated>
+    <lastUpdated>20141209205306</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141203212006</updated>
+        <updated>20141209205306</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
