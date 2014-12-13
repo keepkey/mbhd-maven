@@ -7,41 +7,41 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-    <lastUpdated>20141209205511</lastUpdated>
+    <lastUpdated>20141213115034</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205511</updated>
+        <updated>20141213115034</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>tests</classifier>
         <extension>jar</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205510</updated>
+        <updated>20141213115033</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>bundled</classifier>
         <extension>jar</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205510</updated>
+        <updated>20141213115032</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205510</updated>
+        <updated>20141213115032</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205509</updated>
+        <updated>20141213115031</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>0.13-alice-SNAPSHOT</value>
-        <updated>20141209205509</updated>
+        <updated>20141213115031</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
