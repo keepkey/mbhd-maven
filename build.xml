@@ -32,18 +32,14 @@
     <copy todir="snapshots/org/multibit/hd/hardware/trezor" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/trezor"/>
     </copy>
-    <!-- Examples are not required as a dependency and are ignored -->
-    <copy todir="snapshots/org/multibit/hd/hardware/emulators" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/multibit/hd/hardware/emulators"/>
-    </copy>
 
     <!-- hid4java release artifacts -->
-    <copy todir="releases/org/hid4java/hid4java/0.1.0" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/hid4java/hid4java/0.1.0"/>
+    <copy todir="releases/org/hid4java/hid4java/0.2.0" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/hid4java/hid4java/0.2.0"/>
     </copy>
     <!-- hid4java snapshot artifacts -->
-    <copy todir="snapshots/org/hid4java/hid4java/0.2.0-SNAPSHOT" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/hid4java/hid4java/0.2.0-SNAPSHOT"/>
+    <copy todir="snapshots/org/hid4java/hid4java/develop-SNAPSHOT" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/hid4java/hid4java/develop-SNAPSHOT"/>
     </copy>
 
     <!-- Forked Bitcoinj release artifacts -->
