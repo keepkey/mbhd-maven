@@ -4,9 +4,8 @@
   <artifactId>trezor</artifactId>
   <versioning>
     <versions>
-      <version>0.0.1-SNAPSHOT</version>
       <version>develop-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20150127162912</lastUpdated>
+    <lastUpdated>20150127222754</lastUpdated>
   </versioning>
 </metadata>
