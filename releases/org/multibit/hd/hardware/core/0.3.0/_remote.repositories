@@ -1,5 +1,5 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Feb 02 22:56:38 GMT 2015
-core-0.2.1.jar>=
-core-0.2.1-sources.jar>=
-core-0.2.1.pom>=
+#Tue Feb 10 22:29:44 GMT 2015
+core-0.3.0-sources.jar>=
+core-0.3.0.jar>=
+core-0.3.0.pom>=
