@@ -3,11 +3,14 @@
   <groupId>org.multibit.hd</groupId>
   <artifactId>mbhd-core</artifactId>
   <versioning>
-    <release>0.0.4</release>
+    <release>0.0.7beta</release>
     <versions>
       <version>develop-SNAPSHOT</version>
       <version>0.0.4</version>
+      <version>0.0.5beta</version>
+      <version>0.0.6beta</version>
+      <version>0.0.7beta</version>
     </versions>
-    <lastUpdated>20141125162817</lastUpdated>
+    <lastUpdated>20150305125202</lastUpdated>
   </versioning>
 </metadata>
