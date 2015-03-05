@@ -53,6 +53,15 @@
     </copy>
 
     <!-- Forked Bitcoinj snapshot artifacts -->
+    <copy todir="snapshots/org/bitcoinj/bitcoinj-core/0.13-alice-develop-SNAPSHOT" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-core/0.13-alice-develop-SNAPSHOT">
+    <exclude name="*bundled*.jar" />
+    </fileset>
+    </copy>
+    <copy todir="snapshots/org/bitcoinj/bitcoinj-parent/0.13-alice-develop-SNAPSHOT" overwrite="true">
+    <fileset dir="${repo}/org/bitcoinj/bitcoinj-parent/0.13-alice-develop-SNAPSHOT"/>
+    </copy>
+
     <copy todir="snapshots/org/bitcoinj/bitcoinj-core/0.13-alice-SNAPSHOT" overwrite="true">
     <fileset dir="${repo}/org/bitcoinj/bitcoinj-core/0.13-alice-SNAPSHOT">
     <exclude name="*bundled*.jar" />
