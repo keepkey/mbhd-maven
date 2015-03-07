@@ -10,7 +10,8 @@
       <version>0.0.5beta</version>
       <version>0.0.6beta</version>
       <version>0.0.7beta</version>
+      <version>bip70-develop-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20150305124715</lastUpdated>
+    <lastUpdated>20150307124830</lastUpdated>
   </versioning>
 </metadata>
