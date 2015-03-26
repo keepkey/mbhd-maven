@@ -1,14 +1,5 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Thu Oct 16 16:31:56 BST 2014
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.error=
-https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases/.lastUpdated=1413473515228
-https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/snapshots/.lastUpdated=1413473516473
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1413473514847
-https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1413473513804
-https\://raw.githubusercontent.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1413473515749
-http\://repository.jboss.org/.lastUpdated=1413473514587
-https\://github.com/bitcoin-solutions/mbhd-maven/raw/master/releases/.error=
-https\://repository.jboss.org/nexus/content/repositories/releases/.error=
-http\://repository.jboss.org/.error=
-http\://repo1.maven.org/maven2/.lastUpdated=1413473513263
-http\://repo1.maven.org/maven2/.error=
+#Fri Mar 20 11:21:16 GMT 2015
+https\://rawgithub.com/bitcoin-solutions/mbhd-maven/master/releases/.error=
+https\://rawgithub.com/bitcoin-solutions/mbhd-maven/master/snapshots/.lastUpdated=1426850476609
+https\://rawgithub.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1426850475567
