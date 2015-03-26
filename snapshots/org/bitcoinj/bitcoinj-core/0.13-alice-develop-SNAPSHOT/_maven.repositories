@@ -1,6 +1,10 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Fri Mar 20 22:10:43 GMT 2015
+#Thu Mar 26 23:10:03 GMT 2015
+bitcoinj-core-0.13-alice-develop-SNAPSHOT-bundled.jar>=
+bitcoinj-core-0.13-alice-develop-SNAPSHOT-sources.jar>=
+bitcoinj-core-0.13-alice-develop-SNAPSHOT-tests.jar>=
 bitcoinj-core-0.13-alice-develop-SNAPSHOT.jar>=
 bitcoinj-core-0.13-alice-develop-SNAPSHOT.jar>mbhd-maven-snapshot=
+bitcoinj-core-0.13-alice-develop-SNAPSHOT-javadoc.jar>=
 bitcoinj-core-0.13-alice-develop-SNAPSHOT.pom>mbhd-maven-snapshot=
 bitcoinj-core-0.13-alice-develop-SNAPSHOT.pom>=
