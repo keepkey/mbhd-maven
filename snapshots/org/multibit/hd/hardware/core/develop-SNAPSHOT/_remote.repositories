@@ -1,5 +1,11 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Fri Mar 20 22:11:54 GMT 2015
-core-develop-SNAPSHOT-sources.jar>=
+#Mon Apr 06 16:39:16 BST 2015
+core-develop-SNAPSHOT.jar>mbhd-maven-snapshot=
+core-develop-SNAPSHOT.jar>mbhd-maven-snapshot-raw-text=
+core-develop-SNAPSHOT.pom>mbhd-maven-snapshot=
 core-develop-SNAPSHOT.jar>=
+core-develop-SNAPSHOT.jar>mbhd-maven-snapshot-raw-blob=
 core-develop-SNAPSHOT.pom>=
+core-develop-SNAPSHOT-sources.jar>=
+core-develop-SNAPSHOT.pom>mbhd-maven-snapshot-raw-text=
+core-develop-SNAPSHOT.pom>mbhd-maven-snapshot-raw-blob=
