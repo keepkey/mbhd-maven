@@ -3,7 +3,7 @@
   <groupId>org.multibit.hd</groupId>
   <artifactId>mbhd-parent</artifactId>
   <versioning>
-    <release>0.0.7beta</release>
+    <release>0.0.8beta</release>
     <versions>
       <version>develop-SNAPSHOT</version>
       <version>0.0.4</version>
@@ -11,7 +11,8 @@
       <version>0.0.6beta</version>
       <version>0.0.7beta</version>
       <version>bip70-develop-SNAPSHOT</version>
+      <version>0.0.8beta</version>
     </versions>
-    <lastUpdated>20150409141249</lastUpdated>
+    <lastUpdated>20150501162725</lastUpdated>
   </versioning>
 </metadata>
