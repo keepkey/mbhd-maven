@@ -148,15 +148,6 @@
         </configuration>
       </plugin>
 
-      <!-- Ensure checksums are generated on install -->
-      <plugin>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>2.5.2</version>
-        <configuration>
-          <createChecksum>true</createChecksum>
-        </configuration>
-      </plugin>
-
       <!-- Findbugs
            Notes:
            See target/findBugs.xml for report
