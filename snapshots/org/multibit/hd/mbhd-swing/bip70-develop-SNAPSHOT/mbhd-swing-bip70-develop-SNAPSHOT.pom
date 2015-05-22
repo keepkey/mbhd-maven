@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.multibit.hd</groupId>
+    <artifactId>mbhd-parent</artifactId>
+    <version>bip70-develop-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>mbhd-swing</artifactId>
+
+  <name>MultiBit HD Swing</name>
+  <description>The Swing implementation of the MultiBit HD user interface.</description>
+
+  <!-- Common build -->
+  <build>
+
+    <plugins>
+
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <!-- Step 1: Set all timestamps to same value -->
+          <execution>
+            <id>1-touch-classes</id>
+            <phase>prepare-package</phase>
+            <configuration>
+              <target>
+                <!-- The deterministic date is arbitrary so Bitcoin genesis seems appropriate -->
+                <touch millis="1231006500000">
+                  <fileset dir="target/classes" erroronmissingdir="false"/>
+                </touch>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+
+          <!-- Step 3: Rename ZIP as JAR and set timestamp to same value -->
+          <execution>
+            <id>3-rename-assembly</id>
+            <phase>package</phase>
+            <configuration>
+              <target>
+                <!-- Move the deterministic ZIP into a JAR ignoring absence since we may be in a parent POM -->
+                <!-- If Ant 1.8.3+ can be guaranteed on all build+dev environments then the quiet="true" attribute can be added -->
+                <move file="target/${project.artifactId}-${project.version}-deterministic.zip"
+                      tofile="target/${project.artifactId}-${project.version}.jar"
+                      failonerror="false"
+                  />
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Step 2: Assemble as a ZIP to avoid MANIFEST.MF timestamp -->
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <ignoreMissingDescriptor>true</ignoreMissingDescriptor>
+          <descriptors>
+            <descriptor>src/main/assembly/zip.xml</descriptor>
+          </descriptors>
+          <attach>false</attach>
+        </configuration>
+        <executions>
+          <execution>
+            <id>2-make-assembly</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Shade plugin is required to make a "slim" JAR -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <createDependencyReducedPom>true</createDependencyReducedPom>
+          <filters>
+            <filter>
+              <artifact>*:*</artifact>
+              <excludes>
+                <exclude>META-INF/*.SF</exclude>
+                <exclude>META-INF/*.DSA</exclude>
+                <exclude>META-INF/*.RSA</exclude>
+                <exclude>META-INF/*.less</exclude>
+              </excludes>
+            </filter>
+          </filters>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-slim-jar</id>
+            <phase>install</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <excludes>
+                  <exclude>junit:junit</exclude>
+                  <exclude>jmock:*</exclude>
+                  <exclude>com.google:bitcoinj:*</exclude>
+                  <exclude>com.subgraph:orchid:*</exclude>
+                </excludes>
+              </artifactSet>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>org.multibit.hd.ui.MultiBitHD</mainClass>
+                </transformer>
+              </transformers>
+              <!-- This entry links to the installer configurations -->
+              <finalName>multibit-hd</finalName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+  <dependencies>
+    <!-- MultiBit HD support libraries -->
+    <dependency>
+      <groupId>org.multibit.hd</groupId>
+      <artifactId>mbhd-core</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+
+    <!-- MigLayout for better Swing presentation -->
+    <!-- Encourages good layout design of forms -->
+    <dependency>
+      <groupId>com.miglayout</groupId>
+      <artifactId>miglayout-swing</artifactId>
+      <version>4.2</version>
+    </dependency>
+
+    <!-- JLayer for MP3 playback -->
+    <dependency>
+      <groupId>com.googlecode.soundlibs</groupId>
+      <artifactId>jlayer</artifactId>
+      <version>1.0.1-1</version>
+    </dependency>
+
+    <!-- ZXing for QR code generation -->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>javase</artifactId>
+      <version>1.6</version>
+    </dependency>
+
+  </dependencies>
+
+</project>
