@@ -1,5 +1,8 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Mon Apr 27 20:54:41 BST 2015
+#Sat May 30 18:42:27 BST 2015
 hid4java-0.3.1.jar>=
+hid4java-0.3.1.pom>mbhd-maven-release=
 hid4java-0.3.1.pom>=
 hid4java-0.3.1-sources.jar>=
+hid4java-0.3.1.jar>mbhd-maven-release=
+hid4java-0.3.1-sources.jar>mbhd-maven-release=
