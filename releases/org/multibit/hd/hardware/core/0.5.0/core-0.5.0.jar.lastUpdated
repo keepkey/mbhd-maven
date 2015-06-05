@@ -1,9 +1,9 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Sat May 30 18:32:54 BST 2015
+#Sat May 30 19:30:49 BST 2015
 http\://repo1.maven.org/maven2/.error=
 https\://repository.jboss.org/nexus/content/repositories/releases/.error=
-http\://repository.jboss.org/.lastUpdated=1433007171517
-https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1433007171072
-http\://repo1.maven.org/maven2/.lastUpdated=1433007170530
+http\://repository.jboss.org/.lastUpdated=1433010645076
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1433010644716
+http\://repo1.maven.org/maven2/.lastUpdated=1433010644177
 http\://repository.jboss.org/.error=
-https\://raw.github.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1433007174158
+https\://raw.github.com/bitcoin-solutions/mbhd-maven/master/releases/.lastUpdated=1433010649007
