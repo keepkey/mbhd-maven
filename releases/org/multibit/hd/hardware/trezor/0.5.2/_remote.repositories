@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat Jun 06 22:00:25 BST 2015
+trezor-0.5.2.jar>=
+trezor-0.5.2-sources.jar>=
+trezor-0.5.2.pom>=
