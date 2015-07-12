@@ -60,11 +60,11 @@
     </copy>
 
     <!-- BRIT Core release artifacts (most recent only) -->
-    <copy todir="releases/org/multibit/hd/brit-parent/1.0.0" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/multibit/hd/brit-parent/1.0.0"/>
+    <copy todir="releases/org/multibit/hd/brit-parent/0.2.0" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/brit-parent/0.2.0"/>
     </copy>
-    <copy todir="releases/org/multibit/hd/brit-core/1.0.0" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/multibit/hd/brit-core/1.0.0"/>
+    <copy todir="releases/org/multibit/hd/brit-core/0.2.0" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/brit-core/0.2.0"/>
     </copy>
     <!-- BRIT Core snapshot artifacts -->
     <copy todir="snapshots/org/multibit/hd/brit-parent/develop-SNAPSHOT" overwrite="true" failonerror="false">
@@ -75,11 +75,11 @@
     </copy>
 
     <!-- Error Reporting Core release artifacts (most recent only) -->
-    <copy todir="releases/org/multibit/hd/error-reporting-parent/1.0.0" overwrite="true" failonerror="false">
-    <fileset dir="${repo}/org/multibit/hd/error-reporting-parent/1.0.0"/>
+    <copy todir="releases/org/multibit/hd/error-reporting-parent/0.2.0" overwrite="true" failonerror="false">
+    <fileset dir="${repo}/org/multibit/hd/error-reporting-parent/0.2.0"/>
     </copy>
-    <copy todir="releases/org/multibit/hd/error-reporting-core/1.0.0" overwrite="true" failonerror="false">
-      <fileset dir="${repo}/org/multibit/hd/error-reporting-core/1.0.0"/>
+    <copy todir="releases/org/multibit/hd/error-reporting-core/0.2.0" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/error-reporting-core/0.2.0"/>
     </copy>
     <!-- Error Reporting Core snapshot artifacts -->
     <copy todir="snapshots/org/multibit/hd/error-reporting-core/develop-SNAPSHOT" overwrite="true" failonerror="false">
