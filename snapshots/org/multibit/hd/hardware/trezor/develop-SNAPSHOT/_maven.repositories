@@ -1,7 +1,7 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Sun Jul 26 15:50:33 BST 2015
-trezor-develop-SNAPSHOT-sources.jar>=
+#Sun Jul 26 18:07:13 BST 2015
 trezor-develop-SNAPSHOT.pom>=
+trezor-develop-SNAPSHOT-sources.jar>=
 trezor-develop-SNAPSHOT.jar>mbhd-maven-snapshot-raw-text=
 trezor-develop-SNAPSHOT.pom>mbhd-maven-snapshot-raw-text=
 trezor-develop-SNAPSHOT.jar>=
