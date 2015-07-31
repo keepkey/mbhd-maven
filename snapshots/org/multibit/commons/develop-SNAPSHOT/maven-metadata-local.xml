@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.multibit</groupId>
+  <artifactId>commons</artifactId>
+  <version>develop-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20150711155150</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>develop-SNAPSHOT</value>
+        <updated>20150711155150</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>develop-SNAPSHOT</value>
+        <updated>20150711155150</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>develop-SNAPSHOT</value>
+        <updated>20150711155150</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
