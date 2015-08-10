@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Aug 10 13:09:53 BST 2015
+bitcoinj-core-0.13.2-alice-0.1.3.jar>=
+bitcoinj-core-0.13.2-alice-0.1.3-javadoc.jar>=
+bitcoinj-core-0.13.2-alice-0.1.3.pom>=
+bitcoinj-core-0.13.2-alice-0.1.3-bundled.jar>=
+bitcoinj-core-0.13.2-alice-0.1.3-tests.jar>=
+bitcoinj-core-0.13.2-alice-0.1.3-sources.jar>=
