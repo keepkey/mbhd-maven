@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Aug 25 18:27:14 BST 2015
+trezor-0.6.0-sources.jar>=
+trezor-0.6.0.jar>=
+trezor-0.6.0.pom>=
