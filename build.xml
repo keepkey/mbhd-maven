@@ -58,6 +58,18 @@
     <copy todir="snapshots/org/multibit/hd/hardware/trezor/develop-SNAPSHOT" overwrite="true" failonerror="false">
       <fileset dir="${repo}/org/multibit/hd/hardware/trezor/develop-SNAPSHOT"/>
     </copy>
+    <copy todir="snapshots/org/multibit/hd/hardware/parent/keepkey-develop-SNAPSHOT" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/hardware/parent/keepkey-develop-SNAPSHOT"/>
+    </copy>
+    <copy todir="snapshots/org/multibit/hd/hardware/core/keepkey-develop-SNAPSHOT" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/hardware/core/keepkey-develop-SNAPSHOT"/>
+    </copy>
+    <copy todir="snapshots/org/multibit/hd/hardware/trezor/keepkey-develop-SNAPSHOT" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/hardware/trezor/keepkey-develop-SNAPSHOT"/>
+    </copy>
+    <copy todir="snapshots/org/multibit/hd/hardware/keepkey/keepkey-develop-SNAPSHOT" overwrite="true" failonerror="false">
+      <fileset dir="${repo}/org/multibit/hd/hardware/keepkey/keepkey-develop-SNAPSHOT"/>
+    </copy>
 
     <!-- BRIT Core release artifacts (most recent only) -->
     <copy todir="releases/org/multibit/hd/brit-parent/0.3.0" overwrite="true" failonerror="false">
