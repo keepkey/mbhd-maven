@@ -99,6 +99,7 @@
   <modules>
     <module>core</module>
     <module>trezor</module>
+    <module>keepkey</module>
   </modules>
 
   <profiles>
