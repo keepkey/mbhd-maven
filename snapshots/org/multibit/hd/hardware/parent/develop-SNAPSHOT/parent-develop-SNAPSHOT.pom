@@ -99,6 +99,7 @@
   <modules>
     <module>core</module>
     <module>trezor</module>
+    <module>keepkey</module>
   </modules>
 
   <profiles>
@@ -232,14 +233,14 @@
       <dependency>
         <groupId>org.multibit</groupId>
         <artifactId>commons</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
       </dependency>
 
       <!-- hid4java for HID USB -->
       <dependency>
         <groupId>org.hid4java</groupId>
         <artifactId>hid4java</artifactId>
-        <version>develop-SNAPSHOT</version>
+        <version>0.4.0</version>
       </dependency>
 
       <!-- Findbugs annotations -->
