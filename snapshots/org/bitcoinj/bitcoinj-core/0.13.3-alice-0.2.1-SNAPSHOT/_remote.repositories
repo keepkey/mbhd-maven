@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Feb 19 15:55:33 GMT 2016
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT-javadoc.jar>=
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT-tests.jar>=
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT.jar>=
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT-bundled.jar>=
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT-sources.jar>=
+bitcoinj-core-0.13.3-alice-0.2.1-SNAPSHOT.pom>=
