@@ -1,0 +1,8 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Sep 15 14:29:08 PDT 2016
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT-tests.jar>=
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT.jar>=
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT-bundled.jar>=
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT-sources.jar>=
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT.pom>=
+bitcoinj-core-0.13.3-alice-0.2.2-SNAPSHOT-javadoc.jar>=

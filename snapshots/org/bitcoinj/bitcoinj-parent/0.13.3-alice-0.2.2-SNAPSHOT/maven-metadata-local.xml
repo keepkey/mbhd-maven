@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.bitcoinj</groupId>
+  <artifactId>bitcoinj-parent</artifactId>
+  <version>0.13.3-alice-0.2.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20160915212724</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.13.3-alice-0.2.2-SNAPSHOT</value>
+        <updated>20160915212724</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
