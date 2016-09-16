@@ -1,3 +1,4 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Thu Sep 15 17:23:24 PDT 2016
-parent-develop-SNAPSHOT.pom>=
+#Thu Sep 15 17:19:28 PDT 2016
+parent-0.8.0.pom>=
+parent-0.8.0.pom.asc>=

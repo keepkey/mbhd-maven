@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Sep 15 17:19:47 PDT 2016
+keepkey-0.8.0.pom>=
+keepkey-0.8.0-sources.jar>=
+keepkey-0.8.0-sources.jar.asc>=
+keepkey-0.8.0.pom.asc>=
+keepkey-0.8.0.jar.asc>=
+keepkey-0.8.0.jar>=

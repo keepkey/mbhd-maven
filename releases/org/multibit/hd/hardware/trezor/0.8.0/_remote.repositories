@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Sep 15 17:19:41 PDT 2016
+trezor-0.8.0-sources.jar>=
+trezor-0.8.0-sources.jar.asc>=
+trezor-0.8.0.jar>=
+trezor-0.8.0.pom.asc>=
+trezor-0.8.0.jar.asc>=
+trezor-0.8.0.pom>=

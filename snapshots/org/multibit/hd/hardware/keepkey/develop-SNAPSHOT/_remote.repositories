@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Sep 15 17:23:43 PDT 2016
+keepkey-develop-SNAPSHOT.jar>=
+keepkey-develop-SNAPSHOT-sources.jar>=
+keepkey-develop-SNAPSHOT.pom>=
