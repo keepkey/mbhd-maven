@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Sep 19 15:20:09 PDT 2016
+mbhd-core-0.4.0.jar>=
+mbhd-core-0.4.0-sources.jar>=
+mbhd-core-0.4.0.pom>=
+mbhd-core-0.4.0.pom.asc>=
+mbhd-core-0.4.0.jar.asc>=
+mbhd-core-0.4.0-sources.jar.asc>=
