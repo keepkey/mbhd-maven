@@ -1,0 +1,410 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.multibit.hd</groupId>
+  <artifactId>mbhd-parent</artifactId>
+  <version>0.5.1</version>
+  <packaging>pom</packaging>
+
+  <name>MultiBit HD</name>
+  <description>
+    MultiBit HD is a Java Bitcoin wallet providing a simple to use wallet based on hierarchical deterministic wallets
+    and hardware wallets. It relies on the Simplified Payment Verification (SPV) mode of Bitcoin.
+  </description>
+
+  <properties>
+    <!-- Source encoding -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- Library versions with multiple modules -->
+    <xchange.version>2.1.0</xchange.version>
+    <jackson.version>2.3.2</jackson.version>
+    <findbugs.version>3.0.0</findbugs.version>
+    <multibit-hardware.version>0.8.1</multibit-hardware.version>
+
+  </properties>
+
+  <modules>
+    <module>mbhd-core</module>
+    <module>mbhd-swing</module>
+  </modules>
+
+  <url>http://github.com/keepkey/multibit-hd</url>
+  <inceptionYear>2013</inceptionYear>
+
+  <organization>
+    <name>KeepKey, LLC</name>
+    <url>http://keepkey.com</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Jim Burton</name>
+      <email>jim.burton@bitcoin-solutions.co.uk</email>
+    </developer>
+    <developer>
+      <name>Gary Rowe</name>
+      <email>gary.rowe@bitcoin-solutions.co.uk</email>
+    </developer>
+    <developer>
+      <name>Kenneth Heutmaker</name>
+      <email>ken@keepkey.com</email>
+    </developer>
+    <developer>
+      <name>Kartik Iyer</name>
+      <email>kartik@keepkey.com</email>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+      <comments>All source code is under the MIT license.</comments>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/keepkey/multibit-hd/issues</url>
+  </issueManagement>
+
+  <repositories>
+    <!-- Define the MultiBit staging repository for releases and snapshots -->
+    <!-- Use https://rawgithub.com to provide a consistent result -->
+    <repository>
+      <id>mbhd-maven-release</id>
+      <url>https://raw.github.com/keepkey/mbhd-maven/master/releases</url>
+      <releases />
+    </repository>
+    <repository>
+      <id>mbhd-maven-snapshot</id>
+      <url>https://raw.github.com/keepkey/mbhd-maven/master/snapshots</url>
+      <!-- These artifacts change frequently during development iterations -->
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+
+  </repositories>
+
+  <!--
+  <distributionManagement>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <downloadUrl>https://oss.sonatype.org/content/groups/public/uk/co/bitcoin-solutions</downloadUrl>
+  </distributionManagement>
+  -->
+
+  <scm>
+    <connection>scm:git:git@github.com:keepkey/multibit-hd.git</connection>
+    <developerConnection>scm:git:git@github.com:keepkey/multibit-hd.git</developerConnection>
+    <url>git@github.com:keepkey/multibit-hd.git</url>
+    <tag>v0.5.1</tag>
+  </scm>
+
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <configuration>
+                  <homedir>${gpg.homedir}</homedir>
+                  <defaultKeyring>false</defaultKeyring>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <configuration>
+              <createChecksum>true</createChecksum>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <gpg.homedir>/Volumes/GPG/.gnupg</gpg.homedir>
+      </properties>
+    </profile>
+
+  </profiles>
+
+  <build>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.zenjava</groupId>
+          <artifactId>javafx-maven-plugin</artifactId>
+          <version>2.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.7</version>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <!-- Ensure compilation is done under Java 7 in all environments -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+          <showDeprecation>true</showDeprecation>
+          <showWarnings>true</showWarnings>
+        </configuration>
+      </plugin>
+
+      <!-- Findbugs
+           Notes:
+           See Issue #323 for initial response to introduction and supporting notes
+           See target/findBugs.xml for report
+           Use Findbugs-IDEA plugin with "Medium" (default) or "Low" (recommended) threshold
+      -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>${findbugs.version}</version>
+        <configuration>
+          <effort>Max</effort>
+          <!-- The project currently passes with Medium but Low is desired -->
+          <threshold>Medium</threshold>
+          <xmlOutput>true</xmlOutput>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.16</version>
+        <configuration>
+          <!-- Provide extra memory to reduce excessive threads being allocated during testing -->
+          <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+          <!-- Filter out functional and FEST UI tests by Maven (an IDE will run all tests including functional) -->
+          <excludes>
+            <exclude>**/*FunctionalTest.java</exclude>
+            <exclude>**/*FestTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+      <!-- Generates a source code JAR during package -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- For deploying to Maven Central -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.2</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+  <!-- Provide defaults for all modules to use -->
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- BRIT Core for managing income -->
+      <dependency>
+        <groupId>org.multibit.hd</groupId>
+        <artifactId>brit-core</artifactId>
+        <version>0.4.0</version>
+      </dependency>
+
+      <!-- Error Reporting Core for encrypted error reports -->
+      <dependency>
+        <groupId>org.multibit.hd</groupId>
+        <artifactId>error-reporting-core</artifactId>
+        <version>0.3.0</version>
+      </dependency>
+
+      <!-- MultiBit Hardware supported devices -->
+      <dependency>
+        <groupId>org.multibit.hd.hardware</groupId>
+        <artifactId>trezor</artifactId>
+        <version>${multibit-hardware.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.multibit.hd.hardware</groupId>
+        <artifactId>keepkey</artifactId>
+        <version>${multibit-hardware.version}</version>
+      </dependency>
+
+      <!-- Jersey client for upstream requests -->
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-client</artifactId>
+        <version>1.17.1</version>
+      </dependency>
+
+      <!-- Testing -->
+
+      <!-- JUnit for testing -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- FEST for fluent test assertions -->
+      <dependency>
+        <groupId>org.easytesting</groupId>
+        <artifactId>fest-assert-core</artifactId>
+        <version>2.0M10</version>
+        <scope>test</scope>
+      </dependency>
+      <!-- FEST for Swing UI testing -->
+      <dependency>
+        <groupId>org.easytesting</groupId>
+        <artifactId>fest-swing</artifactId>
+        <version>1.2.1</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- Mockito for mocking -->
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>1.8.5</version>
+        <scope>test</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- All modules will have these dependencies -->
+  <dependencies>
+
+    <!-- bitcoinj alice fork -->
+    <dependency>
+      <groupId>org.bitcoinj</groupId>
+      <artifactId>bitcoinj-core</artifactId>
+      <version>0.13.3-alice-0.2.1</version>
+    </dependency>
+
+    <!-- BRIT Core for managing income -->
+    <dependency>
+      <groupId>org.multibit.hd</groupId>
+      <artifactId>brit-core</artifactId>
+    </dependency>
+
+    <!-- Error Reporting Core for encrypted error reports -->
+    <dependency>
+      <groupId>org.multibit.hd</groupId>
+      <artifactId>error-reporting-core</artifactId>
+    </dependency>
+
+    <!-- MultiBit Hardware -->
+    <dependency>
+      <groupId>org.multibit.hd.hardware</groupId>
+      <artifactId>trezor</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.multibit.hd.hardware</groupId>
+      <artifactId>keepkey</artifactId>
+    </dependency>
+
+    <!-- Jersey client for upstream requests -->
+    <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-client</artifactId>
+    </dependency>
+
+    <!-- Testing -->
+
+    <!-- JUnit for testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <!-- FEST for fluent test assertions -->
+    <dependency>
+      <groupId>org.easytesting</groupId>
+      <artifactId>fest-swing</artifactId>
+    </dependency>
+
+    <!-- Mockito for mocking -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+    </dependency>
+  </dependencies>
+</project>
